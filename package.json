@@ -1,8 +1,8 @@
 {
-  "name": "global-garden-web",
+  "name": "global-garden",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://nithuan141.github.io/global-garden-web",
+  "homepage": "http://nithuan141.github.io/global-garden",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
