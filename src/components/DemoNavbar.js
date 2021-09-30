@@ -19,6 +19,7 @@ import {
   Col,
   UncontrolledTooltip
 } from "reactstrap";
+import { NewTreeStory } from "./NewTreeStory";
 import { TreeBadge } from "./PublicHome";
 
 class DemoNavbar extends React.Component {
@@ -41,8 +42,20 @@ class DemoNavbar extends React.Component {
 
   onLogin  = (e) => {
     e.preventDefault();
-    window.sessionStorage.setItem('logedin', 'Armin')
-    this.props.login();
+    if(this.props.isLoggedIn) {
+      this.setState({
+        openModal: true
+      })
+    } else {
+      window.sessionStorage.setItem('logedin', 'Armin')
+      this.props.login();
+    }
+  }
+
+  closeModal = () => {
+    this.setState({
+      openModal: false
+    })
   }
 
   logOut = (e) => {
@@ -220,6 +233,7 @@ class DemoNavbar extends React.Component {
                   </NavItem>
                 </Nav>
               </UncontrolledCollapse>
+              <NewTreeStory open = {this.state.openModal} onClose= {this.closeModal}/>
             </Container>
           </Navbar>
         </header>
