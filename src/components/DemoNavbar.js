@@ -24,7 +24,7 @@ import { TreeBadge } from "./PublicHome";
 class DemoNavbar extends React.Component {
   state = {
     collapseClasses: "",
-    collapseOpen: false
+    collapseOpen: false,
   };
 
   onExiting = () => {
@@ -38,6 +38,18 @@ class DemoNavbar extends React.Component {
       collapseClasses: ""
     });
   };
+
+  onLogin  = (e) => {
+    e.preventDefault();
+    window.sessionStorage.setItem('logedin', 'Armin')
+    this.props.login();
+  }
+
+  logOut = (e) => {
+    e.preventDefault();
+    window.sessionStorage.removeItem('logedin')
+    this.props.login();
+  }
 
   render() {
     return (
@@ -188,17 +200,20 @@ class DemoNavbar extends React.Component {
                     </UncontrolledTooltip>
                   </NavItem>
                   <NavItem className="d-none d-lg-block ml-lg-4">
-                    <Button
+                  <span style={{color: 'white', marginRight: '5px'}}>{ this.props.isLoggedIn ? `Hello ${this.props.isLoggedIn}`: ''}</span>
+                  { this.props.isLoggedIn && <Button  onClick={this.logOut}>Log out</Button> }
+                  <Button
                       className="btn-neutral btn-icon"
                       color="default"
                       href="#"
-                      target="_blank"
-                    >
+                      onClick={this.onLogin}
+                    > 
                       <span className="btn-inner--icon">
                         <i className="fa fa-cloud-download mr-2" />
                       </span>
                       <span className="nav-link-inner--text ml-1">
-                        {this.props.isLogedin ? 'Share a tree story' : 'Signin'}
+                        
+                        {this.props.isLoggedIn ? 'Share a tree story' : 'Signin'}
                       </span>
                     </Button>
                     

@@ -16,10 +16,10 @@ const Wrapper = styled.div`
   }
 `;
 
-const Marker = ({ text, onClick }) => (
+const Marker = ({ story, onClick }) => (
     <Wrapper
-        alt={text}
-        onClick={onClick}
+        alt={story.owner}
+        onClick={()=> {onClick(story)}}
     >
         <TreeIcon />
     </Wrapper>

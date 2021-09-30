@@ -1,83 +1,75 @@
 import React from 'react'
 
+import tree from '../assets/img/icons/tree.svg'
+import coin from '../assets/img/icons/coin.svg'
+import certificate from '../assets/img/icons/certificate.svg'
+
 // reactstrap components
 import {
     Badge,
     Button,
     Card,
     CardBody,
-    CardImg,
-    FormGroup,
-    Input,
-    InputGroupAddon,
-    InputGroupText,
-    InputGroup,
     Container,
     Row,
-    Col
+    Col,
+    CardTitle,
+    CardText,
+    CardSubtitle
 } from "reactstrap";
 
 
 export const PrivateHome = () => {
-    return <main >
-        <div className="position-relative">
-            {/* shape Hero */}
-            <section className="section section-lg section-shaped pb-250">
-                <div className="shape shape-style-1 shape-default">
-                <span />
-                <span />
-                <span />
-                <span />
-                <span />
-                <span />
-                <span />
-                <span />
-                <span />
-                </div>
+    return <Container>
+        <Row>
+            <Col>
+                <Wallet />
+            </Col>
+            <Col>
+                <Asset />
+            </Col>
+            <Col>
+                <Certificate />
+            </Col>
+        </Row>
+    </Container>
+}
 
-                {/* SVG separator */}
-                <div className="separator separator-bottom separator-skew">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="none"
-                        version="1.1"
-                        viewBox="0 0 2560 100"
-                        x="0"
-                        y="0"
-                    >
-                        <polygon
-                            className="fill-white"
-                            points="2560 0 2560 100 0 100"
-                        />
-                    </svg>
-                </div>
-            </section>
-            {/* 1st Hero Variation */}
-        </div>
+export const Wallet = () => {
+    return <Card>
+        <CardBody>
+          <CardTitle tag="h5">5</CardTitle>
+          <CardSubtitle tag="h6" className="mb-2 text-muted">TCN Wallet</CardSubtitle>
+        </CardBody>
+        <img width="100%" src={coin} alt="Card image cap" style={{height: '5rem'}}/>
+        <CardBody>
+          <CardText>Your tree coin balance.</CardText>
+        </CardBody>
+      </Card>
+}
 
-        <section className="section section-lg bg-gradient-default">
-            <Container className="pt-lg pb-300">
-                <Row className="text-center justify-content-center">
-                   
-                </Row>
-            </Container>
-            {/* SVG separator */}
-            <div className="separator separator-bottom separator-skew zindex-100">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    preserveAspectRatio="none"
-                    version="1.1"
-                    viewBox="0 0 2560 100"
-                    x="0"
-                    y="0"
-                >
-                    <polygon
-                        className="fill-white"
-                        points="2560 0 2560 100 0 100"
-                    />
-                </svg>
-            </div>
-        </section>
+export const Asset = () => {
+    return <Card>
+        <CardBody>
+          <CardTitle tag="h5">You own 5</CardTitle>
+          <CardSubtitle tag="h6" className="mb-2 text-muted">Number of Trees</CardSubtitle>
+        </CardBody>
+        <img width="100%" src={tree} alt="Card image cap" style={{height: '5rem'}}/>
+        <CardBody>
+          <CardText>Your tree assets.</CardText>
+        </CardBody>
+      </Card>
+}
 
-    </main>
+export const Certificate = () => {
+    return <Card>
+        <CardBody>
+          <CardTitle tag="h5"> 2 </CardTitle>
+          <CardSubtitle tag="h6" className="mb-2 text-muted">Certificate or Bagdes</CardSubtitle>
+        </CardBody>
+        <img width="100%" src={certificate} alt="Card image cap" style={{height: '5rem'}}/>
+        <CardBody>
+          <CardText>Your certificate and badges.</CardText>
+        </CardBody>
+      </Card>
 }

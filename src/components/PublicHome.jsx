@@ -11,27 +11,20 @@ import {
 
 import PublicTreemap from "./PublicTreeMap";
 import tree from '../assets/img/icons/tree.svg'
+import { PrivateHome } from './PrivateHome';
 
-export const PublicHome = () => {
+export const PublicHome = ({user}) => {
     return <main>
         <div className="position-relative">
             <section className="section section-lg section-shaped pb-250">
                 <Bubbles />
-                <section>
-                    <PublicTreemap />
+                <section style={{marginBottom: '10px'}}>
+                {user && <PrivateHome />}
                 </section>
                 <section>
-                    <Container>
-                        <Row>
-                            <Col>
-                                <TreeBadge count={1} />
-                            </Col>
-                        </Row>
-                    </Container>
-
+                    <PublicTreemap user={user}/>
                 </section>
             </section>
-
         </div>
     </main>
 }
