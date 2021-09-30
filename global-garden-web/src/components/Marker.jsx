@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import tree from '../assets/img/icons/tree.svg'
+import { TreeIcon } from './PublicHome';
 
 const Wrapper = styled.div`
   position: absolute;
@@ -21,9 +21,7 @@ const Marker = ({ text, onClick }) => (
         alt={text}
         onClick={onClick}
     >
-        <span className="btn-inner--icon mr-1" style={{ minWidth: '25px' }}>
-            <img alt="..." src={tree} />
-        </span>
+        <TreeIcon />
     </Wrapper>
 );
 

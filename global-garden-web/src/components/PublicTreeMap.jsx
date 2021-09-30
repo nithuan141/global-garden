@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 import Marker from './Marker';
+import { GetAllTree } from '../service/treedataservice';
 
 export const MAP_API_KEY = 'AIzaSyDmdNYP71cM7GUjxc5mDrn09j0SowsSStM';
-
-const TreeLocations = [{lat: 59.81921097726422, lng:10.75191402715559}, {lat: 59.71921097726422, lng:10.75191402715559}, {lat: 58.91921097726422, lng:10.75191402715559}, 
-    {lat: 59.91921097726422, lng:10.95191402715559}, {lat: 59.92921097726422, lng:10.71191402715559}, {lat: 59.91921097726422, lng:10.72191402715559}, 
-    {lat: 59.94921097726422, lng:10.75191402715559}, {lat: 59.92821097726422, lng:10.75191402715559}, {lat: 59.81921097726422, lng:10.85191402715559}, ]
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
@@ -34,7 +31,7 @@ class PublicTreemap extends Component {
             text="Trees "
           />
 
-        {TreeLocations.map(item => <Marker
+        {GetAllTree().map(item => <Marker
             key={`${item.lat}-${item.lng}`}
             text={'Tree'}
             lat={ item.lat}

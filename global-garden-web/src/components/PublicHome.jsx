@@ -15,27 +15,16 @@ import tree from '../assets/img/icons/tree.svg'
 export const PublicHome = () => {
     return <main>
         <div className="position-relative">
-            {/* shape Hero */}
             <section className="section section-lg section-shaped pb-250">
-                <div className="shape shape-style-1 shape-default">
-                    <span />
-                    <span />
-                    <span />
-                    <span />
-                    <span />
-                    <span />
-                    <span />
-                    <span />
-                    <span />
-                </div>
+                <Bubbles />
                 <section>
-                <PublicTreemap />
+                    <PublicTreemap />
                 </section>
                 <section>
                     <Container>
                         <Row>
                             <Col>
-                                <TreeBadge count={1}/>
+                                <TreeBadge count={1} />
                             </Col>
                         </Row>
                     </Container>
@@ -50,8 +39,26 @@ export const PublicHome = () => {
 export const TreeBadge = ({ count }) => {
     return <Button color="primary" type="button">
         <Badge className="badge-white">{count || ''}</Badge>
-        <span className="btn-inner--icon mr-1" style={{ minWidth: '25px' }}>
-            <img alt="..." src={tree} />
-        </span>
+        <TreeIcon />
     </Button>
+}
+
+export const TreeIcon = () => {
+    return <span className="btn-inner--icon mr-1" style={{ minWidth: '25px' }}>
+    <img alt="..." src={tree} />
+</span>
+}
+
+export const Bubbles = () => {
+    return <div className="shape shape-style-1 shape-default">
+        <span />
+        <span />
+        <span />
+        <span />
+        <span />
+        <span />
+        <span />
+        <span />
+        <span />
+    </div>
 }
