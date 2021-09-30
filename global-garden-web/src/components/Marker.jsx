@@ -17,14 +17,14 @@ const Wrapper = styled.div`
 `;
 
 const Marker = ({ text, onClick }) => (
-  <Wrapper
-    alt={text}
-    onClick={onClick}
-  >
-<span className="btn-inner--icon mr-1" style={{ minWidth: '25px' }}>
+    <Wrapper
+        alt={text}
+        onClick={onClick}
+    >
+        <span className="btn-inner--icon mr-1" style={{ minWidth: '25px' }}>
             <img alt="..." src={tree} />
         </span>
-      </Wrapper>
+    </Wrapper>
 );
 
 
