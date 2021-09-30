@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/global-garden-web/static/css/main.00b5b031.chunk.css",
+    "main.js": "/global-garden-web/static/js/main.3b6118bb.chunk.js",
+    "main.js.map": "/global-garden-web/static/js/main.3b6118bb.chunk.js.map",
+    "runtime-main.js": "/global-garden-web/static/js/runtime-main.785deb20.js",
+    "runtime-main.js.map": "/global-garden-web/static/js/runtime-main.785deb20.js.map",
+    "static/js/2.c341f1a8.chunk.js": "/global-garden-web/static/js/2.c341f1a8.chunk.js",
+    "static/js/2.c341f1a8.chunk.js.map": "/global-garden-web/static/js/2.c341f1a8.chunk.js.map",
+    "static/js/3.fd0b2b3d.chunk.js": "/global-garden-web/static/js/3.fd0b2b3d.chunk.js",
+    "static/js/3.fd0b2b3d.chunk.js.map": "/global-garden-web/static/js/3.fd0b2b3d.chunk.js.map",
+    "index.html": "/global-garden-web/index.html",
+    "static/css/main.00b5b031.chunk.css.map": "/global-garden-web/static/css/main.00b5b031.chunk.css.map",
+    "static/js/2.c341f1a8.chunk.js.LICENSE.txt": "/global-garden-web/static/js/2.c341f1a8.chunk.js.LICENSE.txt",
+    "static/media/argon-react.png": "/global-garden-web/static/media/argon-react.128d71d3.png",
+    "static/media/font-awesome.min.css": "/global-garden-web/static/media/fontawesome-webfont.f691f37e.woff",
+    "static/media/nucleo.css": "/global-garden-web/static/media/nucleo-icons.d6a66724.ttf",
+    "static/media/tree.c19a9df7.svg": "/global-garden-web/static/media/tree.c19a9df7.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.785deb20.js",
+    "static/js/2.c341f1a8.chunk.js",
+    "static/css/main.00b5b031.chunk.css",
+    "static/js/main.3b6118bb.chunk.js"
+  ]
+}
