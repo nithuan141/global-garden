@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/global-garden/static/css/main.8c138dac.chunk.css",
-    "main.js": "/global-garden/static/js/main.3ca05fec.chunk.js",
-    "main.js.map": "/global-garden/static/js/main.3ca05fec.chunk.js.map",
-    "runtime-main.js": "/global-garden/static/js/runtime-main.a06e2a59.js",
-    "runtime-main.js.map": "/global-garden/static/js/runtime-main.a06e2a59.js.map",
-    "static/js/2.6e3c4608.chunk.js": "/global-garden/static/js/2.6e3c4608.chunk.js",
-    "static/js/2.6e3c4608.chunk.js.map": "/global-garden/static/js/2.6e3c4608.chunk.js.map",
-    "static/js/3.61215290.chunk.js": "/global-garden/static/js/3.61215290.chunk.js",
-    "static/js/3.61215290.chunk.js.map": "/global-garden/static/js/3.61215290.chunk.js.map",
+    "main.js": "/global-garden/static/js/main.4c813806.chunk.js",
+    "main.js.map": "/global-garden/static/js/main.4c813806.chunk.js.map",
+    "runtime-main.js": "/global-garden/static/js/runtime-main.d05592de.js",
+    "runtime-main.js.map": "/global-garden/static/js/runtime-main.d05592de.js.map",
+    "static/js/2.4b9a65ae.chunk.js": "/global-garden/static/js/2.4b9a65ae.chunk.js",
+    "static/js/2.4b9a65ae.chunk.js.map": "/global-garden/static/js/2.4b9a65ae.chunk.js.map",
+    "static/js/3.a2aa92fb.chunk.js": "/global-garden/static/js/3.a2aa92fb.chunk.js",
+    "static/js/3.a2aa92fb.chunk.js.map": "/global-garden/static/js/3.a2aa92fb.chunk.js.map",
     "index.html": "/global-garden/index.html",
     "static/css/main.8c138dac.chunk.css.map": "/global-garden/static/css/main.8c138dac.chunk.css.map",
-    "static/js/2.6e3c4608.chunk.js.LICENSE.txt": "/global-garden/static/js/2.6e3c4608.chunk.js.LICENSE.txt",
+    "static/js/2.4b9a65ae.chunk.js.LICENSE.txt": "/global-garden/static/js/2.4b9a65ae.chunk.js.LICENSE.txt",
     "static/media/argon-react.png": "/global-garden/static/media/argon-react.128d71d3.png",
     "static/media/certificate.03a6823b.svg": "/global-garden/static/media/certificate.03a6823b.svg",
     "static/media/coin.18703011.svg": "/global-garden/static/media/coin.18703011.svg",
@@ -20,9 +20,9 @@
     "static/media/tree.c19a9df7.svg": "/global-garden/static/media/tree.c19a9df7.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a06e2a59.js",
-    "static/js/2.6e3c4608.chunk.js",
+    "static/js/runtime-main.d05592de.js",
+    "static/js/2.4b9a65ae.chunk.js",
     "static/css/main.8c138dac.chunk.css",
-    "static/js/main.3ca05fec.chunk.js"
+    "static/js/main.4c813806.chunk.js"
   ]
 }
