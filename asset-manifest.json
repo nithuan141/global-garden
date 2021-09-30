@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/global-garden/static/css/main.8c138dac.chunk.css",
-    "main.js": "/global-garden/static/js/main.5524ecbb.chunk.js",
-    "main.js.map": "/global-garden/static/js/main.5524ecbb.chunk.js.map",
-    "runtime-main.js": "/global-garden/static/js/runtime-main.a881ed50.js",
-    "runtime-main.js.map": "/global-garden/static/js/runtime-main.a881ed50.js.map",
-    "static/js/2.283b73a5.chunk.js": "/global-garden/static/js/2.283b73a5.chunk.js",
-    "static/js/2.283b73a5.chunk.js.map": "/global-garden/static/js/2.283b73a5.chunk.js.map",
-    "static/js/3.88d39c5f.chunk.js": "/global-garden/static/js/3.88d39c5f.chunk.js",
-    "static/js/3.88d39c5f.chunk.js.map": "/global-garden/static/js/3.88d39c5f.chunk.js.map",
+    "main.js": "/global-garden/static/js/main.90570b60.chunk.js",
+    "main.js.map": "/global-garden/static/js/main.90570b60.chunk.js.map",
+    "runtime-main.js": "/global-garden/static/js/runtime-main.486c70c9.js",
+    "runtime-main.js.map": "/global-garden/static/js/runtime-main.486c70c9.js.map",
+    "static/js/2.03808b70.chunk.js": "/global-garden/static/js/2.03808b70.chunk.js",
+    "static/js/2.03808b70.chunk.js.map": "/global-garden/static/js/2.03808b70.chunk.js.map",
+    "static/js/3.1ce8270e.chunk.js": "/global-garden/static/js/3.1ce8270e.chunk.js",
+    "static/js/3.1ce8270e.chunk.js.map": "/global-garden/static/js/3.1ce8270e.chunk.js.map",
     "index.html": "/global-garden/index.html",
     "static/css/main.8c138dac.chunk.css.map": "/global-garden/static/css/main.8c138dac.chunk.css.map",
-    "static/js/2.283b73a5.chunk.js.LICENSE.txt": "/global-garden/static/js/2.283b73a5.chunk.js.LICENSE.txt",
+    "static/js/2.03808b70.chunk.js.LICENSE.txt": "/global-garden/static/js/2.03808b70.chunk.js.LICENSE.txt",
     "static/media/argon-react.png": "/global-garden/static/media/argon-react.128d71d3.png",
     "static/media/font-awesome.min.css": "/global-garden/static/media/fontawesome-webfont.f691f37e.woff",
     "static/media/nucleo.css": "/global-garden/static/media/nucleo-icons.d6a66724.ttf",
     "static/media/tree.c19a9df7.svg": "/global-garden/static/media/tree.c19a9df7.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a881ed50.js",
-    "static/js/2.283b73a5.chunk.js",
+    "static/js/runtime-main.486c70c9.js",
+    "static/js/2.03808b70.chunk.js",
     "static/css/main.8c138dac.chunk.css",
-    "static/js/main.5524ecbb.chunk.js"
+    "static/js/main.90570b60.chunk.js"
   ]
 }
