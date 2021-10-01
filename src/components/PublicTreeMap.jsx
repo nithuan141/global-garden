@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 import Marker from './Marker';
-import { GetAllTree } from '../service/treedataservice';
+import treeDataService from '../service/treedataservice';
 import { TreeStory } from './TreeStory';
 
 export const MAP_API_KEY = 'AIzaSyDmdNYP71cM7GUjxc5mDrn09j0SowsSStM';
@@ -31,7 +31,6 @@ class PublicTreemap extends Component {
   }
 
   modalOpen = (story) =>{
-    debugger;
     this.setState({
       modalOpen: true,
       story: story
@@ -39,12 +38,6 @@ class PublicTreemap extends Component {
   }
 
   render() {
-    let data = GetAllTree();
-
-    if(this.props.user) {
-      data.filter(x=>x.owner == this.props.user)
-    }
-
     return (
       // Important! Always set the container height explicitly
       <div style={{ height: '70vh', width: '100%' }}>
@@ -60,7 +53,7 @@ class PublicTreemap extends Component {
           />
 
         {
-        GetAllTree().map(item => <Marker
+        treeDataService.getAllTree().map(item => <Marker
             key={`${item.owner}-${item.uniqueId}`}
             story={item}
             lat={ item.lat}

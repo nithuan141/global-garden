@@ -20,7 +20,7 @@ import {
   UncontrolledTooltip
 } from "reactstrap";
 import { NewTreeStory } from "./NewTreeStory";
-import { TreeBadge } from "./PublicHome";
+import logo from '../assets/img/logo.JPG'
 
 class DemoNavbar extends React.Component {
   state = {
@@ -103,7 +103,7 @@ class DemoNavbar extends React.Component {
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
                       <i className="ni ni-ui-04 d-lg-none mr-1" />
-                      <span className="nav-link-inner--text">Global Garden</span>
+                      <img src={logo} style={{marginTop: "-15px"}}/>
                     </DropdownToggle>
                     <DropdownMenu className="dropdown-menu-xl">
                       <div className="dropdown-menu-inner">
@@ -167,7 +167,7 @@ class DemoNavbar extends React.Component {
                   <NavItem>
                     <NavLink
                       className="nav-link-icon"
-                      href="https://www.facebook.com/globalgarden"
+                      href="https://www.facebook.com/ggkunst"
                       id="tooltip333589074"
                       target="_blank"
                     >
@@ -183,7 +183,7 @@ class DemoNavbar extends React.Component {
                   <NavItem>
                     <NavLink
                       className="nav-link-icon"
-                      href="https://www.instagram.com/globalgarden"
+                      href="https://www.instagram.com/ggkunst"
                       id="tooltip356693867"
                       target="_blank"
                     >
@@ -199,7 +199,7 @@ class DemoNavbar extends React.Component {
                   <NavItem>
                     <NavLink
                       className="nav-link-icon"
-                      href="https://twitter.com/globalgarden"
+                      href="https://twitter.com/ggkunst"
                       id="tooltip184698705"
                       target="_blank"
                     >

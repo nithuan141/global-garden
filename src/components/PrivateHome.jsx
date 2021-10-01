@@ -1,6 +1,6 @@
 import React from 'react'
 
-import tree from '../assets/img/icons/tree.svg'
+import tree from '../assets/img/icons/gg_map_icon.png'
 import coin from '../assets/img/icons/coin.svg'
 import certificate from '../assets/img/icons/certificate.svg'
 
@@ -20,7 +20,7 @@ import {
 
 
 export const PrivateHome = () => {
-    return <Container>
+    return <Container><br></br>
         <Row>
             <Col>
                 <Wallet />
@@ -54,7 +54,7 @@ export const Asset = () => {
           <CardTitle tag="h5">You own 5</CardTitle>
           <CardSubtitle tag="h6" className="mb-2 text-muted">Number of Trees</CardSubtitle>
         </CardBody>
-        <img width="100%" src={tree} alt="Card image cap" style={{height: '5rem'}}/>
+        <img width="100%" src={tree} alt="Card image cap" style={{height: '5rem', width:'5rem', marginLeft: "35%"}}/>
         <CardBody>
           <CardText>Your tree assets.</CardText>
         </CardBody>
@@ -65,11 +65,11 @@ export const Certificate = () => {
     return <Card>
         <CardBody>
           <CardTitle tag="h5"> 2 </CardTitle>
-          <CardSubtitle tag="h6" className="mb-2 text-muted">Certificate or Bagdes</CardSubtitle>
+          <CardSubtitle tag="h6" className="mb-2 text-muted">Badges</CardSubtitle>
         </CardBody>
         <img width="100%" src={certificate} alt="Card image cap" style={{height: '5rem'}}/>
         <CardBody>
-          <CardText>Your certificate and badges.</CardText>
+          <CardText>Your tree badges.</CardText>
         </CardBody>
       </Card>
 }

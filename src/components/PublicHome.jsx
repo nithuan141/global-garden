@@ -10,7 +10,7 @@ import {
 } from "reactstrap";
 
 import PublicTreemap from "./PublicTreeMap";
-import tree from '../assets/img/icons/tree.svg'
+import tree from '../assets/img/icons/gg_map_icon.png'
 import { PrivateHome } from './PrivateHome';
 
 export const PublicHome = ({user}) => {
@@ -37,8 +37,8 @@ export const TreeBadge = ({ count }) => {
 }
 
 export const TreeIcon = () => {
-    return <span className="btn-inner--icon mr-1" style={{ minWidth: '25px' }}>
-    <img alt="..." src={tree} />
+    return <span className="btn-inner--icon mr-1" style={{ height: '2.5rem' }}>
+    <img alt="..." src={tree} style={{ height: '2.5rem' }}/>
 </span>
 }
 

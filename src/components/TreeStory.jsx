@@ -1,21 +1,33 @@
 import react from 'react'
-import { Button, Container, Modal, ModalBody, ModalFooter, ModalHeader, Row, Col } from 'reactstrap'
-import tree from '../assets/img/icons/tree.svg'
+import { Button, Container, Modal, ModalBody, ModalFooter, ModalHeader, Row, Col, Card, CardTitle, CardText } from 'reactstrap'
 
 export const TreeStory = (props) => {
-    const { open, owner, onClose, story, planteddate } = props
+    const { open, owner, onClose, story, planteddate, imgUrl, uniqueId , lat, lng, title} = props
 
     return <Modal isOpen={open} toggle={onClose} >
-        <ModalHeader toggle={onClose}>{owner}'s Tree Planted on {planteddate}</ModalHeader>
+        <ModalHeader toggle={onClose}>{title} </ModalHeader>
         <ModalBody>
             <Container>
                 <Row>
                     <Col>
-                        <img alt="..." src={tree} style={{ height: '10rem' }} />
+                        <img alt="..." src={imgUrl} style={{ height: '10rem', alignItems: "center" }} align ="center" />
                     </Col>
-                    <Col>
-                        {story}
-                    </Col>
+                </Row> <br></br> <Row></Row>
+
+
+                <Card body inverse color="primary">
+        <CardText> <Row>
+            <Col>ID </Col><Col>{uniqueId}</Col></Row>
+                        <Row><Col>Location</Col><Col>{`${lat}, ${lng}`}</Col></Row>
+                        <Row><Col>Date </Col><Col>{planteddate}</Col></Row>
+                        <Row><Col>Owner </Col><Col>{owner}</Col></Row>
+                </CardText>
+      </Card>
+      <br></br>
+                <Row>
+                <Col>
+                    {story}
+                </Col>
                 </Row>
             </Container>
         </ModalBody>
